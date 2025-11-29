@@ -65,11 +65,12 @@ GitHub リンク: https://github.com/NoFear2k6/NoFear2k6
 
 
 ## ソフトスキル
-![https://img.shields.io/badge/チームワーク-重要-blue]
-![https://img.shields.io/badge/コミュニケーション-良好-green]
-![https://img.shields.io/badge/向上心 -得意-yellow]
-![https://img.shields.io/badge/忍耐力-向上中-orange]
-![https://img.shields.io/badge/協調性-実践中-red]
+
+![Teamwork](https://img.shields.io/badge/チームワーク-重要-blue)
+![Communication](https://img.shields.io/badge/コミュニケーション-良好-green)
+![Effort](https://img.shields.io/badge/向上心-得意-yellow)
+![Patience](https://img.shields.io/badge/忍耐力-向上中-orange)
+![Cooperation](https://img.shields.io/badge/協調性-実践中-red)
 
 ---
 
