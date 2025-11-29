@@ -99,6 +99,7 @@ GitHub リンク: https://github.com/NoFear2k6/NoFear2k6
 
 [![Email](https://img.shields.io/badge/Email-ff4b4b?style=for-the-badge&logo=gmail&logoColor=white)](mailto:lengoctu3000@gmail.com)
 [![GitHub](https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/NoFear2k6)
+[![Facebook](https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://www.facebook.com/le.ngoc.tu.462229)
 
 ---
 
