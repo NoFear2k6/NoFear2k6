@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thêm bài viết</title>
+    <link rel="stylesheet" href="baiviet.css">
+    <style>
+        .add-container {
+            max-width: 600px;
+            margin: 50px auto;
+            background: #fff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 8px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+        button {
+            margin-top: 15px;
+            padding: 10px 15px;
+            border: none;
+            background: #3498db;
+            color: #fff;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="add-container">
+        <h2>Thêm bài viết mới</h2>
+
+        <label>Tiêu đề bài viết:</label>
+        <input type="text" id="titleInput">
+
+        <label>Nội dung bài viết:</label>
+        <textarea rows="5" id="contentInput"></textarea>
+
+        <label>Chọn ảnh (không bắt buộc):</label>
+        <input type="file" accept="image/*" id="imgInput">
+
+        <div style="margin-top: 15px;">
+            <input type="checkbox" id="agreeCheck">
+            <label for="agreeCheck">Tôi cam kết tuân thủ nguyên tắc đăng bài.</label>
+        </div>
+
+        <button onclick="addPost()">Đăng bài</button>
+    </div>
+
+    <script>
+        function addPost() {
+            let title = document.getElementById("titleInput").value;
+            let content = document.getElementById("contentInput").value;
+            let agree = document.getElementById("agreeCheck").checked;
+            let file = document.getElementById("imgInput").files[0];
+
+            if (!title || !content) {
+                alert("Vui lòng nhập đầy đủ tiêu đề và nội dung.");
+                return;
+            }
+
+            if (!agree) {
+                alert("Bạn phải cam kết tuân thủ nguyên tắc trước khi đăng.");
+                return;
+            }
+
+            let reader = new FileReader();
+            reader.onload = function(event) {
+                let image = event.target.result;
+
+                let newPost = {
+                    title: title,
+                    content: content,
+                    img: image
+                };
+
+                let oldPosts = JSON.parse(localStorage.getItem("posts")) || [];
+                oldPosts.push(newPost);
+
+                localStorage.setItem("posts", JSON.stringify(oldPosts));
+
+                alert("Đăng bài thành công ✨");
+                window.location.href = "bootstrap.html"; 
+            };
+
+            if (file) reader.readAsDataURL(file);
+            else reader.onload({ target: { result: null } });
+        }
+    </script>
+</body>
+</html>

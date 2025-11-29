@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Các bài viết</title>
+    <link rel="stylesheet" href="gallery_style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bài Viết Nổi Bật</h1>
+        <p class="subtitle">Khám phá những nội dung mới nhất và hữu ích nhất.</p>
+
+        <!-- KHU VỰC CHÍNH DÙNG GRID 4 HÀNG X 2 CỘT -->
+        <div class="articles-grid">
+            
+            <!-- Thẻ bài viết mẫu (tổng cộng 8 thẻ) -->
+            
+           
+                <div class="card-content">
+                    <h3>Về các anh hùng trong game</h3>
+                    <p>Bạn có thể vào đây để tìm hiểu chi tiết về các anh hùng:</p>
+                    <a href="https://lordsmobile.igg.com/project/game_tool/index.php?action=play_content&cate=1&lang=vit" target="_blank" class="read-more-btn">Đọc Thêm →</a>
+                </div>
+            </div>
+
+            <div class="article-card">
+                <img src="Media/Ảnh chụp màn hình (723).png" alt="Thumbnail bài viết 2">
+                <div class="card-content">
+                    <h3>Sàn đấu ưu việt</h3>
+                    <p>Tại đây sẽ có những mẹo giúp bạn có thể tăng cường cho anh hùng của bạn</p>
+                    <a href="https://lordsmobile.igg.com/project/game_tool/index.php?action=play_content&cate=2&lang=vit" target="_blank" class="read-more-btn">Đọc Thêm →</a>
+                </div>
+            </div>
+
+            <div class="article-card">
+                <img src="Media/Ảnh chụp màn hình (724).png" alt="Thumbnail bài viết 3">
+                <div class="card-content">
+                    <h3>Trang bị</h3>
+                    <p>Nói về những trang bị có thể có trong game</p>
+                    <a href="https://lordsmobile.igg.com/project/game_tool/index.php?action=play_content&cate=3&lang=vit" target="_blank" class="read-more-btn">Đọc Thêm →</a>
+                </div>
+            </div>
+
+            <div class="article-card">
+                <img src="Media/Ảnh chụp màn hình (725).png" alt="Thumbnail bài viết 4">
+                <div class="card-content">
+                    <h3>Săn quái</h3>
+                    <p>Thông tin các tướng phù hợp với từng loại quái trong game</p>
+                    <a href="https://lordsmobile.igg.com/project/game_tool/index.php?action=play_content&cate=4&lang=vit" target="_blank" class="read-more-btn">Đọc Thêm →</a>
+                </div>
+            </div>
+            
+            <!-- Thẻ 5-8 (Tạo thêm 4 thẻ nữa để đủ 4 hàng x 2 cột) -->
+
+            <div class="article-card">
+                <img src="Media/Ảnh chụp màn hình (726).png" alt="Thumbnail bài viết 5">
+                <div class="card-content">
+                    <h3>Quỷ hắc ám </h3>
+                    <p>Cách đánh quỷ hắc ám</p>
+                    <a href="https://lordsmobile.igg.com/project/game_tool/index.php?action=play_content&cate=5&lang=vit" target="_blank" class="read-more-btn">Đọc Thêm →</a>
+                </div>
+            </div>
+            <div class="article-card">
+                <img src="Media/Ảnh chụp màn hình (727).png" alt="Thumbnail bài viết 6">
+                <div class="card-content">
+                    <h3>Đá quý</h3>
+                    <p>Về tất cả các loại đá quý trong game:</p>
+                    <a href="https://lordsmobile.igg.com/project/game_tool/index.php?action=play_content&cate=6&lang=vit" target="_blank" class="read-more-btn">Đọc Thêm →</a>
+                </div>
+            </div>
+            <div class="article-card">
+                <img src="Media/Screenshot 2025-11-29 004414.png" alt="Thumbnail bài viết 7">
+                <div class="card-content">
+                    <h3>Tính toán tăng tốc:</h3>
+                    <p>Tính toán để phù hợp với lại nhu cầu:</p>
+                    <a href="https://lordsmobile.igg.com/project/game_tool/index.php?action=accelerate&lang=vit" target="_blank" class="read-more-btn">Đọc Thêm →</a>
+                </div>
+            </div>
+            <div class="article-card">
+                <img src="Media/Ảnh chụp màn hình (222).png" alt="Thumbnail bài viết 8">
+                <div class="card-content">
+                    <h3>Các mẹo khác</h3>
+                    <p>Những mẹo đơn giản nhưng hiệu quả:</p>
+                    <a href="https://lordsmobile.igg.com/project/game_tool/index.php?action=accelerate&lang=vit" target="_blank" class="read-more-btn">Đọc Thêm →</a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <script>
+    function loadCustomPosts() {
+        let list = JSON.parse(localStorage.getItem("posts")) || [];
+        let container = document.querySelector(".articles-grid");
+
+        list.forEach((post, index) => {
+            let card = document.createElement("div");
+            card.classList.add("article-card");
+
+            card.innerHTML = `
+                <img src="${post.img || "https://placehold.co/400x200/000/fff?text=No+Image"}" class="thumb">
+                <div class="card-content">
+                    <h3>${post.title}</h3>
+                    <p>${post.content}</p>
+
+                    <button class="delete-btn" onclick="deletePost(${index})"
+                        style="margin-top:10px; padding:7px 12px; background:#e74c3c; color:white; border:none; border-radius:5px; cursor:pointer;">
+                        Xóa bài
+                    </button>
+                </div>
+            `;
+
+            container.appendChild(card);
+        });
+    }
+
+    function deletePost(index) {
+        if (!confirm("Bạn có chắc muốn xoá bài viết này không?")) return;
+
+        let list = JSON.parse(localStorage.getItem("posts")) || [];
+
+        // Xóa đúng bài theo index
+        list.splice(index, 1);
+
+        // Lưu lại
+        localStorage.setItem("posts", JSON.stringify(list));
+
+        alert("Đã xoá bài viết ✔");
+
+        // Reload để cập nhật giao diện
+        location.reload();
+    }
+
+    loadCustomPosts();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Form lồng trong bảng</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    table {
+      background-color: #9bf1a5;
+      border-collapse: collapse;
+      width: 50%;
+      margin: 20px auto;
+    }
+    table, th, td {
+      border: 1px solid #000000;
+    }
+    th, td {
+      padding: 8px;
+      text-align: left;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="submit"] {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 6px;
+    }
+  </style>
+</head>
+<body>
+  <table bgcolor="#e1ff00" >
+    <tr>
+      <th colspan="2">Đăng ký thành viên</th>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <form action="dangky.php" method="post">
+          <table style="width:100%; border: none;">
+            <tr>
+              <td><label for="name">Họ và tên:</label></td>
+              <td><input type="text" id="name" name="name" required></td>
+            </tr>
+            <tr>
+              <td><label for="email">Email:</label></td>
+              <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+              <td>Giới tính</td> 
+              <td>
+                <label>
+                  <input type="radio" name="gioitinh" value="Nam"> Nam
+                </label>
+                <label>
+                  <input type="radio" name="gioitinh" value="Nữ"> Nữ
+                </label>
+                <label>
+                  <input type="radio" name="gioitinh" value="Không muốn tiết lộ"> Không muốn tiết lộ
+                </label>
+              </td>
+            </tr>
+            <tr>
+              <td>Số điện thoại</td>
+              <td><input type="tel"  name="sodienthoai" value=""></td>
+            </tr>
+            <tr>
+              <td>Ngày,tháng,năm sinh</td>
+              <td><input type="date" name="ngaythangnamsinh" value="ngaythangnam"></td>
+            </tr>
+            <tr>
+              <td colspan="2" style="text-align: center;">
+                <input type="submit" value="Gửi">
+              </td>
+            </tr>
+          </table>
+        </form>
+      </td>
+    </tr>
+  </table>
+  
+ 
+</body>
+</html>
