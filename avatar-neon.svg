@@ -1,0 +1,20 @@
+<svg width="210" height="210" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="pulse" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#fff" />
+      <stop offset="60%" stop-color="transparent" />
+    </radialGradient>
+
+    <filter id="glow">
+      <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#ff00ff"/>
+      <feDropShadow dx="0" dy="0" stdDeviation="10" flood-color="#00ffff"/>
+      <feDropShadow dx="0" dy="0" stdDeviation="14" flood-color="#ffff00"/>
+    </filter>
+  </defs>
+
+  <image href="https://github.com/NoFear2k6.png" x="5" y="5" height="200" width="200" 
+         clip-path="circle(100px at 100px 100px)" filter="url(#glow)">
+    <animate attributeName="filter" dur="4s" repeatCount="indefinite"
+      values="url(#glow); url(#glow);" />
+  </image>
+</svg>
