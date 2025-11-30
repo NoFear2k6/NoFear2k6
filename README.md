@@ -1,6 +1,6 @@
-
-
-
+<p align="center">
+  <img src="https://raw.githubusercontent.com/NoFear2k6/NoFear2k6/main/header.svg" />
+</p>
 
 
 ## 👨‍💻 基本情報
@@ -108,11 +108,6 @@ GitHub リンク: https://github.com/NoFear2k6/NoFear2k6
 
 いつも新しいことに挑戦し続けています！  
 日本の企業・チームで一緒に働ける日を楽しみにしています。  
-お気軽にメッセージください！よろしくお願いします 🙇‍♂️
+お気軽にメッセージください！よろしくお願いします 
 
-
-## 📬 連絡先
-
-- Email: tu.524100123@pduni.edu.vn / lengoctu3000@gmail.com
-- 居住地: ベトナム・タインホア省・バンソン社
 
