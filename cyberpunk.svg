@@ -1,0 +1,40 @@
+<svg width="100%" height="140" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background gradient -->
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a0049"/>
+      <stop offset="50%" stop-color="#33006e"/>
+      <stop offset="100%" stop-color="#001f36"/>
+    </linearGradient>
+
+    <!-- Neon glow -->
+    <filter id="neon">
+      <feDropShadow dx="0" dy="0" stdDeviation="3" flood-color="#ff2bdc"/>
+      <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#06d7f7"/>
+    </filter>
+
+    <!-- Typing mask -->
+    <mask id="typing-mask">
+      <rect x="0" y="0" width="0" height="140" fill="white">
+        <animate attributeName="width" from="0" to="100%" dur="5s" fill="freeze"/>
+      </rect>
+    </mask>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="140" fill="url(#bg)" />
+
+  <!-- Text -->
+  <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle"
+        font-size="32" font-family="Consolas, monospace" fill="#ffffff"
+        filter="url(#neon)" mask="url(#typing-mask)">
+    NoFear2k6 — 静かに燃えるエンジニア
+  </text>
+
+  <!-- Subtitle (fade-in) -->
+  <text x="50%" y="80%" dominant-baseline="middle" text-anchor="middle"
+        font-size="16" font-family="Consolas, monospace" fill="#aeeaff" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur="3s" begin="5s" fill="freeze"/>
+    "Quiet effort shapes a loud future."
+  </text>
+</svg>
