@@ -2,9 +2,7 @@
   <img src="https://raw.githubusercontent.com/NoFear2k6/NoFear2k6/main/header.svg" />
 </p>
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/NoFear2k6/NoFear2k6/main/avatar-neon.svg" width="210"/>
-</p>
+
 
 
 ## 👨‍💻 基本情報
