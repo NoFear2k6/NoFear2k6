@@ -7,9 +7,7 @@
   <img src="https://raw.githubusercontent.com/NoFear2k6/NoFear2k6/main/cyberpunk.svg" />
 </p>
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/NoFear2k6/NoFear2k6/main/divider.svg" width="70%">
-</p>
+
 
 
 
