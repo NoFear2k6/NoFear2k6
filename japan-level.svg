@@ -1,0 +1,9 @@
+Japanese Level
+<svg width="400" height="25">
+  <rect width="400" height="25" fill="#333" rx="8"/>
+  <rect width="160" height="25" fill="#ff4b4b" rx="8">
+    <animate attributeName="width" from="0" to="160" dur="1.4s" fill="freeze"/>
+  </rect>
+</svg>
+
+JLPT N4 – Learning in progress
