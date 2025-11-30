@@ -1,0 +1,16 @@
+<svg width="400" height="40" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="25" fill="#222" rx="8"/>
+  
+  <rect width="160" height="25" fill="#ff4b4b" rx="8">
+    <animate 
+      attributeName="width" 
+      from="0" 
+      to="160" 
+      dur="1.5s" 
+      fill="freeze" />
+  </rect>
+
+  <text x="200" y="20" text-anchor="middle" fill="white" font-size="14" font-family="sans-serif">
+    JLPT N4 – Learning in progress
+  </text>
+</svg>
