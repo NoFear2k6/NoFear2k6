@@ -99,11 +99,10 @@ GitHub: https://github.com/NoFear2k6/NoFear2k6
 
 ## 📚 学習・資格状況
 
-| 期間 | 内容 |
-|------|------|
-| 2024.09 ～ 2028.07予定 | フォンドン大学・情報技術学部 |
-| 2025 | 個人ウェブ開発プロジェクト完成 |
-| 現在 | JLPT N4 取得に向けて勉強中 |
+<p align="center">
+  <img src="https://raw.githubusercontent.com/NoFear2k6/NoFear2k6/main/dev-journey.svg" />
+</p>
+
 
 ---
 
