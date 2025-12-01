@@ -1,0 +1,64 @@
+<svg width="100%" height="230" viewBox="0 0 900 230" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <!-- Neon gradient -->
+    <linearGradient id="neon" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ff2bdc"/>
+      <stop offset="50%" stop-color="#7a00ff"/>
+      <stop offset="100%" stop-color="#00eaff"/>
+    </linearGradient>
+
+    <!-- Glow -->
+    <filter id="glow">
+      <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#ff2bdc"/>
+      <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#00eaff"/>
+    </filter>
+  </defs>
+
+  <!-- Central Line -->
+  <line x1="50" y1="120" x2="850" y2="120" stroke="url(#neon)" stroke-width="4"
+        stroke-linecap="round" opacity="0.7">
+    <animate attributeName="stroke-dasharray" from="0 800" to="800 0" dur="2.5s" fill="freeze"/>
+  </line>
+
+  <!-- Milestones -->
+  <!-- 2024 -->
+  <circle cx="200" cy="120" r="10" fill="#fff" filter="url(#glow)" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur="0.8s" begin="1s" fill="freeze"/>
+  </circle>
+  <text x="200" y="95" fill="#aeeaff" font-size="18" text-anchor="middle" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur="0.8s" begin="1.2s" fill="freeze"/>
+    2024.09
+  </text>
+  <text x="200" y="150" fill="#fff" font-size="15" text-anchor="middle" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur="0.8s" begin="1.4s" fill="freeze"/>
+    入学｜IT学部スタート
+  </text>
+
+  <!-- 2025 -->
+  <circle cx="450" cy="120" r="10" fill="#fff" filter="url(#glow)" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur="0.8s" begin="1.8s" fill="freeze"/>
+  </circle>
+  <text x="450" y="95" fill="#aeeaff" font-size="18" text-anchor="middle" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur="0.8s" begin="2s" fill="freeze"/>
+    2025
+  </text>
+  <text x="450" y="150" fill="#fff" font-size="15" text-anchor="middle" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur="0.8s" begin="2.2s" fill="freeze"/>
+    個人プロジェクト完成
+  </text>
+
+  <!-- NOW -->
+  <circle cx="700" cy="120" r="10" fill="#fff" filter="url(#glow)" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur="0.8s" begin="2.6s" fill="freeze"/>
+  </circle>
+  <text x="700" y="95" fill="#aeeaff" font-size="18" text-anchor="middle" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur="0.8s" begin="2.8s" fill="freeze"/>
+    現在
+  </text>
+  <text x="700" y="150" fill="#fff" font-size="15" text-anchor="middle" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur="0.8s" begin="3s" fill="freeze"/>
+    JLPT N4 勉強中
+  </text>
+
+</svg>
