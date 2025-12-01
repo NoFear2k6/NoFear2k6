@@ -55,7 +55,8 @@
 フロントエンドおよびバックエンド全体の設計と実装を担当
 
 使用技術: HTML / CSS / Bootstrap / PHP / SQL Server
-GitHub: https://github.com/xxxxx
+
+GitHub: https://github.com/NoFear2k6/NoFear2k6
 
 🎯 将来の目標
 
