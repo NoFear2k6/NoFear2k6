@@ -14,11 +14,11 @@
 
   <!-- moving text -->
   <text x="800" y="40" font-family="Segoe UI, Roboto, Helvetica, Arial" font-size="20" fill="url(#g1)">
-私のプロフィールをご覧いただき、誠にありがとうございます。
-どうぞよろしくお願いいたします 
+   私のプロフィールへようこそ！
     <animate attributeName="x" from="800" to="-1200" dur="12s" repeatCount="indefinite" />
   </text>
 
+  
   <!-- subtle color pulse -->
   <text x="0" y="0" visibility="hidden">
     <animate attributeName="opacity" values="1;0.8;1" dur="3s" repeatCount="indefinite" />
